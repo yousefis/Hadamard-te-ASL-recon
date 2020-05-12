@@ -1,4 +1,4 @@
-# Dynamic Angiography and Perfusion Acceleration from Hadamard-te Arterial Spin Labeling of rank 8
+# Dynamic Angiography and Perfusion Reconstruction from Hadamard-te Arterial Spin Labeling of rank 8
 You are more than welcome to use this code. Please include the below paper in your work. 
     
     @inproceedings{yousefi2019fast,
