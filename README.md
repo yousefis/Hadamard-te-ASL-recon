@@ -4,8 +4,7 @@ In this work 4D Angiography and Perfusion at eight time-points are reconstructed
 
 This process can be formulated as
 
-h<sub> M\left(\{I_i^\mathchorus{NC}\}, \{I_i^\mathchorus{C}\}\right)_{i=1}^{H} =\{\mathbbm{P}(t), \mathbbm{A}(t)\}_{t=1}^{H-1},
-</sub>x
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;M\left(\{I_i^\mathchorus{NC}\},%20\{I_i^\mathchorus{C}\}\right)_{i=1}^{H}%20=\{\mathbbm{P}(t),%20\mathbbm{A}(t)\}_{t=1}^{H-1}" />
 in which $M$ is the decoding and subtraction function as described earlier \cite{van2018advances,petersen2010quasar}, $I_i^\mathchorus{NC}$ and $I_i^\mathchorus{C}$ are the acquired scans of the $i^{th}$ row of non-crushed and crushed Hadamard te-pCASL datasets, $\mathbbm{P}$ and $\mathbbm{A}$ denote perfusion and angiography scans respectively. 
 
 # 2- Citation
@@ -19,6 +18,12 @@ in which $M$ is the decoding and subtraction function as described earlier \cite
     }
 
 # 3- Proposed network
+
+
+<p>
+    <img src="figures/AnyConv.com__cnn-1.png" alt>
+    <em>Figure 1- Proposed network, a multi-stage DenseUnet. Inputs: an interleaved half-sampled crushed and non-crushed Hadamard-te arterial spin labeling (ASL) of rank 8. Output: dynamic angiography and perdusion scans at 8 time-point.</em>
+</p>
 
 ![Alt Text](figures/AnyConv.com__cnn-1.png)
 .center[Figure 1- Proposed network, a multi-stage DenseUnet. Inputs: an interleaved half-sampled crushed and non-crushed Hadamard-te arterial spin labeling (ASL) of rank 8. Output: dynamic angiography and perdusion scans at 8 time-point.]
