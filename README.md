@@ -29,7 +29,7 @@ in which <img src="https://latex.codecogs.com/svg.latex?\;M"/> is the decoding a
 # 4- Proposed data generator
 The kinetic model for generating signal of arteries: 
 
-<img src=" S_{artery} = \begin{cases} 0 & \text{if $t<\Delta t_b$}\\M_{0a}\cdot aCBV \cdot L_r(b)\times e^{\frac{-\Delta t_b}{T_{1b}}} &\text{if $\Delta t_{b} + \sum_{b^\prime=1}^{b-1}\tau_{b^\prime}\leq t<\Delta t_{b} + \sum_{b^\prime=1}^{b}\tau_{b^\prime}$} \\0 & \text{if $t\geq \Delta t_{b} + \sum_{b^\prime=1}^{N}\tau_{b^{\prime}}$}\\ \end{cases}"/>,
+<img src="https://latex.codecogs.com/svg.latex?\;S_{artery} = \begin{cases} 0 & \text{if $t<\Delta t_b$}\\M_{0a}\cdot aCBV \cdot L_r(b)\times e^{\frac{-\Delta t_b}{T_{1b}}} &\text{if $\Delta t_{b} + \sum_{b^\prime=1}^{b-1}\tau_{b^\prime}\leq t<\Delta t_{b} + \sum_{b^\prime=1}^{b}\tau_{b^\prime}$} \\0 & \text{if $t\geq \Delta t_{b} + \sum_{b^\prime=1}^{N}\tau_{b^{\prime}}$}\\ \end{cases}"/>,
 
 and The kinetic model for generating signal of tissue:
 
