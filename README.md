@@ -2,10 +2,8 @@
 # 1- Introduction
 In this work 4D Angiography and Perfusion at eight time-points are reconstructed from an interleaved half-sampled crushed and non-crushed Hadamard-te arterial spin labeling (ASL) of rank 8. The network uses DenseUnet structure and multi-stage loss function. Different loss functions have been applied for training including: perceptual loss (PL), mean squre error (MSE), Structural Similarity Index (SSIM) in a single and multi-stage fasions. Also, a framework for generating dynamic ASL scans based on the Hadamard ASL kinetic model has been proposed. 
 
-This process can be formulated as
-
-<img src="https://latex.codecogs.com/svg.latex?\;M\left(\{I_i^\mathchorus{NC}\},%20\{I_i^\mathchorus{C}\}\right)_{i=1}^{H}%20=\{\mathbbm{P}(t),%20\mathbbm{A}(t)\}_{t=1}^{H-1}" />
-
+This process can be formulated as: 
+<img src="https://latex.codecogs.com/svg.latex?\;M\left(\{I_i^\mathchorus{NC}\},%20\{I_i^\mathchorus{C}\}\right)_{i=1}^{H}%20=\{\mathbbm{P}(t),%20\mathbbm{A}(t)\}_{t=1}^{H-1}"/>,
 in which <img src="https://latex.codecogs.com/svg.latex?\;M"/> is the decoding and subtraction function, <img src="https://latex.codecogs.com/svg.latex?\;I_i^\mathchorus{NC}"/> and <img src="https://latex.codecogs.com/svg.latex?\;I_i^\mathchorus{C}"/> are the acquired scans of the <img src="https://latex.codecogs.com/svg.latex?\;i^{th}"/> row of non-crushed and crushed Hadamard te-pCASL datasets, <img src="https://latex.codecogs.com/svg.latex?\;\mathbbm{P}"/> and <img src="https://latex.codecogs.com/svg.latex?\;\mathbbm{A}"/> denote perfusion and angiography scans respectively. 
 
 # 2- Citation
