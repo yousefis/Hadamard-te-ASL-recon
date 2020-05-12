@@ -6,7 +6,11 @@ This process can be formulated as
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;M\left(\{I_i^\mathchorus{NC}\},%20\{I_i^\mathchorus{C}\}\right)_{i=1}^{H}%20=\{\mathbbm{P}(t),%20\mathbbm{A}(t)\}_{t=1}^{H-1}" />
 
-in which M is the decoding and subtraction function, <img src="https://latex.codecogs.com/svg.latex?;I_i^\mathchorus{NC}$"/> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;I_i^\mathchorus{C}$"/> are the acquired scans of the $i^{th}$ row of non-crushed and crushed Hadamard te-pCASL datasets, $\mathbbm{P}$ and $\mathbbm{A}$ denote perfusion and angiography scans respectively. 
+in which M is the decoding and subtraction function, 
+
+<img src="https://latex.codecogs.com/svg.latex?;I_i^\mathchorus{NC}$"/>
+
+and <img src="https://latex.codecogs.com/svg.latex?\Large&space;I_i^\mathchorus{C}$"/> are the acquired scans of the $i^{th}$ row of non-crushed and crushed Hadamard te-pCASL datasets, $\mathbbm{P}$ and $\mathbbm{A}$ denote perfusion and angiography scans respectively. 
 
 # 2- Citation
     @inproceedings{yousefi2019fast,
