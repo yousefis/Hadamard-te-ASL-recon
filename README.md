@@ -35,7 +35,17 @@ and The kinetic model for generating signal of tissue:
 
 <img src="https://latex.codecogs.com/svg.latex?\;S_{tissue}=\begin{cases} 0 & \text{if $t<\Delta t_b$}\\\gamma\Gamma_{\beta=0}& \text{if $\Delta t_a \leq t <\Delta t_a + \tau_1$} \\ \gamma\left[\Gamma_{\beta=1}+\Xi_{1:1}\right]& \text{if $\Delta t_a+\tau_1 \leq t <\Delta t_a +\sum_{b=1}^2 \tau_b$} \\\gamma \left[\Gamma_{\beta=B-1}+\Xi_{B-1:1}\right] &\text{if $\Delta t_a+\sum_{b=1}^{B-1}\tau_b\leq t<\Delta t_a + \sum_{b=1}^B \tau_b; B\in\left[3,7\right]$}\\\gamma \Xi_{N:1}& \text{if $t\geq \Delta t_a+\sum_{b=1}^N\tau_b;N=7$}\end{cases}"/>, 
 
-in which <img src="https://latex.codecogs.com/svg.latex?\;\gamma=M_{0a}\cdot f \cdot e^{\frac{-\Delta t_a}{T_{1a}}} \cdot T_{1a}"/> and <img src="https://latex.codecogs.com/svg.latex?\;\Gamma_\beta=L_r(\beta+1)\left(1-e^{-\frac{t-\Delta t_a-\sum_{b=1}^{\beta}\tau_b}{T_{1a}}}\right)"/>, and <img src="https://latex.codecogs.com/svg.latex?\;\Xi_{\beta:\beta^\prime}=\sum_{b^\prime=\beta}^{\beta\prime}L_r(b^\prime)\left(e^{-\frac{t-\Delta t_a-\sum_{b=1}^{b^\prime}\tau_b}{T_{1a}}}-e^{-\frac{t-\Delta t_a-\sum_{b=1}^{b^\prime-1}\tau_b}{T_{1a}}}\right)"/>.
+in which 
+
+<img src="https://latex.codecogs.com/svg.latex?\;\gamma=M_{0a}\cdot f \cdot e^{\frac{-\Delta t_a}{T_{1a}}} \cdot T_{1a}"/> 
+
+and 
+
+<img src="https://latex.codecogs.com/svg.latex?\;\Gamma_\beta=L_r(\beta+1)\left(1-e^{-\frac{t-\Delta t_a-\sum_{b=1}^{\beta}\tau_b}{T_{1a}}}\right)"/>,
+
+and 
+
+<img src="https://latex.codecogs.com/svg.latex?\;\Xi_{\beta:\beta^\prime}=\sum_{b^\prime=\beta}^{\beta\prime}L_r(b^\prime)\left(e^{-\frac{t-\Delta t_a-\sum_{b=1}^{b^\prime}\tau_b}{T_{1a}}}-e^{-\frac{t-\Delta t_a-\sum_{b=1}^{b^\prime-1}\tau_b}{T_{1a}}}\right)"/>.
 
 
 <p>
