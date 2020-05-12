@@ -1,6 +1,8 @@
 # Dynamic Angiography and Perfusion Reconstruction from Hadamard-te Arterial Spin Labeling of rank 8
-You are more than welcome to use this code. Please include the below paper in your work. 
-    
+# 1- Introduction
+In this work 4D Angiography and Perfusion at eight time-points are reconstructed from an interleaved half-sampled crushed and non-crushed Hadamard-te arterial spin labeling (ASL) of rank 8. The network uses DenseUnet structure and multi-stage loss function. Different loss functions have been applied for training including: perceptual loss (PL), mean squre error (MSE), Structural Similarity Index (SSIM) in a single and multi-stage fasions. 
+
+# 2- Citation
     @inproceedings{yousefi2019fast,
     title={Fast Dynamic Perfusion and Angiography Reconstruction using an end-to-end 3D Convolutional Neural Network},
     author={Yousefi, Sahar and Hirschler, Lydiane and van der Plas, Merlijn and Elmahdy, Mohamed S and Sokooti, Hessam and Van Osch, Matthias and Staring, Marius},
@@ -10,16 +12,19 @@ You are more than welcome to use this code. Please include the below paper in yo
     organization={Springer}
     }
 
+#Network
 
 ![Alt Text](figures/AnyConv.com__cnn-1.png)
-Figure 1- Proposed network, a multi-stage DenseUnet. Inputs: an interleaved crushed and non-crushed Hadamard-te arterial spin labeling (ASL) of rank 8. Output: dynamic angiography and perdusion scans at 8 time-point.
+.center[Figure 1- Proposed network, a multi-stage DenseUnet. Inputs: an interleaved half-sampled crushed and non-crushed Hadamard-te arterial spin labeling (ASL) of rank 8. Output: dynamic angiography and perdusion scans at 8 time-point.]
+
+
 
 ![Alt Text](figures/AnyConv.com__data_generator-1.png)
-Figure 2- Proposed data generator.
+.center[Figure 2- Proposed data generator.]
 
 ![Alt Text](figures/angiography_res.bmp)
-Figure 3- Results of reconstructed angiography scans for one subject.
+.center[Figure 3- Results of reconstructed angiography scans for one subject.]
 
 ![Alt Text](figures/perfusion_res.bmp)
-Figure 4- Results of reconstructed perfusion scans for one subject..
+.center[Figure 4- Results of reconstructed perfusion scans for one subject.]
 
