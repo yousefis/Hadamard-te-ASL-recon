@@ -76,8 +76,8 @@ class call_synthesize_net_mse_angio_perf:
         self.min_range = min_range
         self.max_range = max_range
 
-        self.label_patchs_size = 39  # 63
-        self.patch_window = 53  # 77#89
+        self.label_patchs_size = 39  # 63 #input size
+        self.patch_window = 53  # 77#89 #output size
         self.sample_no = sample_no
         self.batch_no = 6
         self.batch_no_validation = self.batch_no
