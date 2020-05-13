@@ -26,9 +26,32 @@ from functions.quantification_measure.quantifications import quantifications
 
 # --------------------------------------------------------------------------------------------------------
 class call_synthesize_net_mse_angio_perf:
+    '''
+
+    '''
     def __init__(self, data, sample_no, validation_samples, no_sample_per_each_itr,
                  train_tag, validation_tag, test_tag, img_name, label_name, torso_tag, log_tag, min_range, max_range,
-                 Logs, fold, Server, newdataset=True):
+                 Logs, fold, Server):
+        '''
+        This function is a constructor for this class
+        :param data: which dataset should it use
+        :param sample_no: number of samples which is used for the training process
+        :param validation_samples: number of samples which is used for the validation process
+        :param no_sample_per_each_itr: number of samples which is used for each epoch
+        :param train_tag: tag for training images
+        :param validation_tag: tag for validation images
+        :param test_tag: tag for test images
+        :param img_name: name of the images
+        :param label_name: name of the labels
+        :param torso_tag: name of masks if needed
+        :param log_tag: tag for log dir
+        :param min_range: min range of images
+        :param max_range: max range of images
+        :param Logs: log dir
+        :param fold: fold no if cross validation is used
+        :param Server: on which server it is running
+        :param newdataset: if it is training on the new DB
+        '''
         settings.init()
 
         # ==================================
@@ -94,9 +117,8 @@ class call_synthesize_net_mse_angio_perf:
         # label=tf.placeholder(tf.float32,shape=[self.batch_no_validation,self.label_patchs_size,self.label_patchs_size,self.label_patchs_size,2])
         # loss_coef=tf.placeholder(tf.float32,shape=[self.batch_no_validation,1,1,1])
         # ===================================================================================
-        _rd = _read_data(data=self.data, train_tag=self.train_tag, validation_tag=self.validation_tag,
-                         test_tag=self.test_tag,
-                         img_name=self.img_name, label_name=self.label_name, torso_tag=self.torso_tag,
+        _rd = _read_data(data=self.data,
+                         img_name=self.img_name, label_name=self.label_name,
                          dataset_path=self.data_path, reverse=True)
 
         self.alpha_coeff = 1

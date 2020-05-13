@@ -10,9 +10,8 @@ from random import shuffle
 
 
 class _read_data:
-    def __init__(self, data,reverse, train_tag='', validation_tag='',
-                 test_tag='',
-                 img_name='.mha', label_name='', torso_tag='',dataset_path=''):
+    def __init__(self, data,reverse,
+                 img_name='.mha', label_name='', dataset_path=''):
         # Server='DL'
 
         path = '/exports/lkeb-hpc/syousefi/Synth_Data/'
@@ -20,9 +19,9 @@ class _read_data:
 
 
 
-        self.train_image_path = path + train_tag
-        self.validation_image_path = path + validation_tag
-        self.test_image_path = path + test_tag
+        self.train_image_path = path
+        self.validation_image_path = path
+        self.test_image_path = path
 
         self.img_name = img_name
         self.label_name = label_name

@@ -98,9 +98,8 @@ class synthesize_net_perceptual_net:
         # label=tf.placeholder(tf.float32,shape=[self.batch_no_validation,self.label_patchs_size,self.label_patchs_size,self.label_patchs_size,2])
         # loss_coef=tf.placeholder(tf.float32,shape=[self.batch_no_validation,1,1,1])
         # ===================================================================================
-        _rd = _read_data(data=self.data, train_tag=self.train_tag, validation_tag=self.validation_tag,
-                         test_tag=self.test_tag,
-                         img_name=self.img_name, label_name=self.label_name, torso_tag=self.torso_tag,
+        _rd = _read_data(data=self.data,
+                         img_name=self.img_name, label_name=self.label_name,
                          dataset_path=self.data_path,reverse=self.newdataset)
 
         self.alpha_coeff = 1

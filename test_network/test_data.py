@@ -41,8 +41,8 @@ bunch_of_images_no=20
 patch_window=77
 label_patchs_size=77
 validation_samples=100
-_rd = _read_data(data=data,train_tag=train_tag, validation_tag=validation_tag, test_tag=test_tag,
-                         img_name=img_name, label_name=label_name,torso_tag=torso_tag,dataset_path=data_path)
+_rd = _read_data(data=data,
+                         img_name=img_name, label_name=label_name,dataset_path=data_path)
 
 alpha_coeff=1
 '''read path of the images for train, test, and validation'''

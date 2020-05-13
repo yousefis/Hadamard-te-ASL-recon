@@ -79,8 +79,8 @@ class forked_synthesizing_net3:
         with open(file_name, 'a') as file:
             file.write(txt)
     def run_net(self):
-        _rd = _read_data(data=self.data,train_tag=self.train_tag, validation_tag=self.validation_tag, test_tag=self.test_tag,
-                         img_name=self.img_name, label_name=self.label_name,torso_tag=self.torso_tag,dataset_path=self.data_path)
+        _rd = _read_data(data=self.data,
+                         img_name=self.img_name, label_name=self.label_name,dataset_path=self.data_path)
 
         self.alpha_coeff=1
         '''read path of the images for train, test, and validation'''

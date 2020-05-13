@@ -47,7 +47,7 @@ if __name__=='__main__':
     is_training = tf.placeholder(tf.bool, name='unet_is_training')
     unet=_unet(trainable=False,file_name=ckpoint_path)
     y = unet.unet(img_row1=img_row1, input_dim=input_dim, is_training=is_training)
-    _rd = _read_data(data=data, train_tag=train_tag, validation_tag=validation_tag, test_tag=test_tag,
+    _rd = _read_data(data=data,
                      img_name=img_name, label_name=label_name, dataset_path=data_path)
 
     train_data, validation_data, test_data = _rd.read_data_path(fold=fold)
