@@ -1,4 +1,4 @@
-# If this repository helps you in anyway, show your love heart by putting a star :star: on this project 
+# If this repository helps you in anyway, show your love :heart: by putting a :star: on this project 
 
 # Dynamic Angiography and Perfusion Reconstruction from Hadamard-te Arterial Spin Labeling of rank 8
 # 1- Introduction
