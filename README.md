@@ -1,3 +1,5 @@
+# If this repository helps you in anyway, show your love heart by putting a star :star: on this project 
+
 # Dynamic Angiography and Perfusion Reconstruction from Hadamard-te Arterial Spin Labeling of rank 8
 # 1- Introduction
 In this work 4D Angiography and Perfusion at eight time-points are reconstructed from an interleaved half-sampled crushed and non-crushed Hadamard-te arterial spin labeling (ASL) of rank 8. The network uses DenseUnet structure and multi-stage loss function. Different loss functions have been applied for training including: perceptual loss (PL), mean squre error (MSE), Structural Similarity Index (SSIM) in a single and multi-stage fasions. Also, a framework for generating dynamic ASL scans based on the Hadamard ASL kinetic model has been proposed. 
