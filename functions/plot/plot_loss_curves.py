@@ -32,7 +32,7 @@ if __name__=='__main__':
     loss_a_ave_vl = []
     loss_p_ave_vl = []
     for train_mode in train_mode_list:
-        log_folder='/srv/2-lkeb-17-dl01/syousefi/TestCode/EsophagusProject/sythesize_code/debug_Log/synth-7-shark/'
+        log_folder='/exports/lkeb-hpc/syousefi/2-lkeb-17-dl01/syousefi/TestCode/EsophagusProject/sythesize_code/debug_Log/synth-7-shark/'
         log_test_folder = log_folder + log_name_train_type[train_mode]
 
         loss_dict = dict()
