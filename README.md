@@ -58,3 +58,6 @@ in which <img src="https://latex.codecogs.com/svg.latex?\;M"/> is the decoding a
 </p>
 
 
+# Requirments
+
+Tensorflow<2 & python>3.4
