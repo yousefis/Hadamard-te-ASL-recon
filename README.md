@@ -1,4 +1,3 @@
-# If this repository helps you in anyway, show your love :heart: by putting a :star: on this project 
 # Goal
 
 In this project I designed a deep learning network to accelerate 4D data reconstruction in Tensorflow.
@@ -64,3 +63,5 @@ in which <img src="https://latex.codecogs.com/svg.latex?\;M"/> is the decoding a
 # Requirments
 
 Tensorflow<2 & python>3.4
+
+# If this repository helps you in anyway, show your love :heart: by putting a :star: on this project 
