@@ -1,4 +1,7 @@
 # If this repository helps you in anyway, show your love :heart: by putting a :star: on this project 
+# Goal
+
+In this project I designed a deep learning network to accelerate 4D data reconstruction in Tensorflow.
 
 # Dynamic Angiography and Perfusion Reconstruction from Hadamard-te Arterial Spin Labeling of rank 8
 # 1- Introduction
